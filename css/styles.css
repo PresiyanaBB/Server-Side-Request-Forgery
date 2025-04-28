@@ -1,0 +1,211 @@
+html,
+body {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    background: white;
+    background: white;
+    fill: currentColor;
+    line-height: 1.625rem;
+    font-size: 16px;
+    color: #262626;
+}
+
+::-webkit-scrollbar {
+    width: 15px;
+    background: #565b60;
+}
+
+::-webkit-scrollbar-track {
+    background: #464b50;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #262b30;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #161b20;
+
+}
+
+#container {
+    margin-left: 340px;
+    display: flex;
+    justify-content: center;
+}
+
+#content {
+    max-width: 900px;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 200px;
+    width: 100%;
+    text-align: justify;
+}
+
+#outline-content {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    position: fixed;
+    top: 0%;
+    bottom: 0px;
+    width: 340px;
+}
+
+#outline {
+    overflow-y: auto;
+    height: 100%;
+    padding: 10px;
+    border-right: 1px solid #262626;
+}
+
+#outline-content li {
+    list-style: square;
+}
+
+@media only screen and (max-width: 1140px) {
+    #outline-content {
+        width: 0;
+        display: none;
+    }
+
+    #container {
+        margin: 0;
+    }
+}
+
+#logo {
+    max-width: 50%;
+    align-self: center;
+    margin-top: 3em;
+    margin-bottom: 3em;
+}
+
+em {
+    font-size: 17px;
+    font-weight: initial;
+}
+
+hr {
+    height: 2px;
+    border: 0;
+    margin: 24px 0 !important;
+    background: grey;
+}
+
+h1 {
+    font-size: 3.5rem;
+    line-height: 2.75rem;
+    margin-bottom: 1.5rem;
+    margin-top: 2em;
+    letter-spacing: -1.5px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 1.63rem;
+    line-height: 1.875rem;
+    margin-bottom: 1.5rem;
+    letter-spacing: -1px;
+    font-weight: bold;
+}
+
+h3 {
+    font-size: 1.17rem;
+    line-height: 1.5rem;
+    margin-bottom: 1.5rem;
+    letter-spacing: -1px;
+    font-weight: bold;
+}
+
+h4 {
+    font-size: 1.12rem;
+    line-height: 1.375rem;
+    margin-bottom: 1.5rem;
+    color: #262626;
+}
+
+h5 {
+    font-size: 0.97rem;
+    line-height: 1.25rem;
+    margin-bottom: 1.5rem;
+    font-weight: bold;
+}
+
+h6 {
+    font-size: 0.93rem;
+    line-height: 1rem;
+    margin-bottom: 0.75rem;
+    color: #262626;
+}
+
+ul {
+    list-style: disc;
+    padding: 0 0 0 1.875rem;
+    margin: 0;
+}
+
+ol {
+    list-style: decimal;
+    padding: 0 0 0 1.875rem;
+    margin: 0;
+}
+
+/* Code Snippet Styling */
+
+.code-snippet {
+    position: relative;
+    margin: 2em 0;
+    color: rgb(207, 207, 207);
+}
+
+code {
+    font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
+    color: rgb(207, 207, 207);
+    background-color: rgb(31, 31, 31);
+    border: 1px solid #474d54;
+    border-radius: 4px;
+    font-size: 0.85rem;
+    display: block;
+    overflow-x: auto;
+    box-shadow: 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+pre {
+    background-color: transparent;
+    border-color: transparent;
+}
+
+a {
+    color: #262626;
+    text-decoration: underline;
+    transition: all 0.2s ease-in-out;
+}
+
+a:hover {
+    color: darkblue;
+}
+
+p>img:only-child {
+    display: block;
+    margin: auto;
+    max-width: 100%;
+}
+
+button {
+    background-color: #474d54;
+    color: #e0e0e0;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+button:hover {
+    background-color: #565b60;
+    color: #fff;
+}
