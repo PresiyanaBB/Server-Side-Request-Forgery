@@ -58,41 +58,9 @@
                 </li>
                 <li>
                     <a href="#как-да-се-предотврати">Как да се предотврати?</a>
-                    <ul>
-                        <li>
-                            <a href="#от-мрежовия-слой">От мрежовия слой</a>
-                            <ul></ul>
-                        </li>
-                        <li>
-                            <a href="#от-приложния-слой">От приложния слой</a>
-                            <ul></ul>
-                        </li>
-                        <li>
-                            <a href="#допълнителни-мерки">Допълнителни мерки, които трябва да се вземат предвид</a>
-                            <ul></ul>
-                        </li>
-                    </ul>
                 </li>
                 <li>
                     <a href="#примерни-сценарии-за-атака">Примерни сценарии за атака</a>
-                    <ul>
-                        <li>
-                            <a href="#сценарий-1">Сценарий 1:</a>
-                            <ul></ul>
-                        </li>
-                        <li>
-                            <a href="#сценарий-2">Сценарий 2:</a>
-                            <ul></ul>
-                        </li>
-                        <li>
-                            <a href="#сценарий-3">Сценарий 3:</a>
-                            <ul></ul>
-                        </li>
-                        <li>
-                            <a href="#сценарий-4">Сценарий 4:</a>
-                            <ul></ul>
-                        </li>
-                    </ul>
                 </li>
                 <li>
                     <a href="#burp-suite">Burp Suite</a>
@@ -113,7 +81,7 @@
                 <a id="ssrf"></a>
                 Server-Side-Request Forgery <br /><br /> (SSRF)
             </h1>
-            <img id="logo" src="img/TOP_10_Icons_Final_SSRF.png" alt="" />
+            <img id="logo" src="img/TOP_10_Icons_Final_SSRF.png" alt="заглавно лого" />
             <section>
                 <p>
                     Фалшифициране на заявка от страна на сървъра (SSRF) е уязвимост, която позволява на атакуващ да
@@ -155,7 +123,8 @@
                     поради облачните услуги и сложността на архитектурите.
                 </p>
                 <p>
-                    <img src="img/intro-photo-1-3rd-party.png" alt="" />
+                    <img id="third-party" src="img/intro-photo-1-3rd-party.png" alt="3rd-party" />
+                <p id="figure-description">Фигура 1: Third-party SSRF</p>
                 </p>
             </section>
             <hr />
@@ -310,7 +279,8 @@
                         </code>
                     </pre>
                 <p>
-                    <img src="img/vectra-ssrf-diagram.png" alt="" />
+                    <img src="img/vectra-ssrf-diagram.png" alt="attack-diagram" />
+                <p id="figure-description">Фигура 2: Диаграма на процеса на SSRF</p>
                 </p>
                 </p>
             </section>
@@ -614,10 +584,11 @@
                 </ul>
                 </p>
                 <p>
-                    <img src="img/burp-suite-initial-page.png" alt="" />
+                    <img src="img/burp-suite-initial-page.png" alt="burp-suite-initial-page" />
                 </p>
                 <p>
-                    <img src="img/burp-suite-game-final.png" alt="" />
+                    <img src="img/burp-suite-game-final.png" alt="burp-suite-game-final" />
+                <p id="figure-description">Фигури 2 и 3: Визуализация на работата с Burp Suite</p>
                 </p>
             </section>
             <hr />
@@ -642,11 +613,11 @@
                                 Следвайте стъпките:<br>
                                 • Първо натиснете <strong>Админ</strong> бутонът. Забележете как не може да се достъпи
                                 съдържанието.<br>
-                                • След това в <strong>Продукт</strong> страницата натиснете бътонът
+                                • След това в <strong>Продукт</strong> страницата натиснете бутонът
                                 <strong>Наличност</strong>.<br>
                                 • В полето за попълване на <strong>stockApi</strong> променете съдържанието, за да
                                 отключите
-                                <strong>Админ</strong> секцията.
+                                <strong>Админ</strong> секцията. Въведете в него следния URL адрес:
                             <pre class="code-snippet"><code>http://localhost/admin</code></pre>
                             • Прочетете съдържанието в <strong>Админ</strong> секцията и ще забележите как да
                             спечелите играта.<br>
@@ -669,6 +640,7 @@
                             <div id="requestPanel" class="mb-3" style="display: none;">
                                 <div class="card">
                                     <div class="card-body">
+                                        <h6>42 бройки</h6>
                                         <h5 class="card-title">Заявка</h5>
                                         <p>Променете <strong>stockApi</strong> параметърът и натиснете
                                             <strong>Изпрати</strong>.
